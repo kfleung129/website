@@ -1,0 +1,46 @@
+@keyframes typing1 {
+    0% { width: 0; border-right: .1em solid teal }
+    99% { width: 100%; border-right: .1em solid teal }
+    100% { width: 100%; border-right: 0 }
+}
+
+@keyframes typing2 {
+    0% { width: 0; border-right: .1em solid teal }
+    99% { width: 75%; border-right: .1em solid teal }
+    100% { width: 75%; border-right: 0 }
+}
+
+@keyframes typing3 {
+    0% { width: 0; border-right: .1em solid teal }
+    99% { width: 97%; border-right: .1em solid teal }
+    100% { width: 97%; border-right: 0 }
+}
+
+.container {
+    display: inline-block;
+}
+
+.typed-out-1{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing1 1.5s forwards;
+}
+
+.typed-out-2{
+    font-weight: bold;
+    color: cyan;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing2 1.5s forwards;
+    animation-delay: 1.5s;
+}
+
+.typed-out-3{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing3 1.5s forwards;
+    animation-delay: 3s;
+}
